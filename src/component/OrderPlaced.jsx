@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo1 from "../assets/order.gif";
 import logo2 from "../assets/done.gif";
+
 const OrderPlaced = () => {
   const [data, setData] = useState({
     img: logo2,

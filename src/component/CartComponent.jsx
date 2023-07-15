@@ -38,6 +38,13 @@ const CartComponent = () => {
       </div>
     );
   }
+
+  const handleOrderPlaced = () => {
+    dispatch({
+      type: "CLEAR_CART",
+    });
+    navigation("/orderPlaced");
+  };
   return (
     <div className="d-flex productMainContainer  justify-content-between container my-3 gap-5">
       <div className="productContainer ">
@@ -127,8 +134,8 @@ const CartComponent = () => {
           {total}
         </span>
         <button
-          onClick={() => navigation("/orderPlaced")}
           type="button"
+          onClick={handleOrderPlaced}
           className="btn btn-primary"
           disabled={cart.lenght === 0}
         >

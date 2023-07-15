@@ -15,6 +15,10 @@ Technologies I have used in this project are given below.
 
 ## Bootstrap 5 🔥
 
+## Demo 🔥
+
+<a href="https://react-shop-cart-app.netlify.app/" target="_blank">Live Demo</a>
+
 ## Available Scripts 🔥
 
 In the project directory, you can run:
