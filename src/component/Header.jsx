@@ -148,7 +148,11 @@ const Header = () => {
                 </>
               ) : (
                 <div className="empty-cart ">
-                  <img src={EmptyCart} style={{ height: 300, width: "80%" }} />
+                  <img
+                    src={EmptyCart}
+                    style={{ height: 300, width: "80%" }}
+                    alt="Empty Cart"
+                  />
                   <h2 style={{ padding: 10 }}>Cart is Empty</h2>
                   <p>Please add some Items in your cart.</p>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CartState } from "../context/Context";
-import { Button, Col, Form, Image, ListGroup, Row } from "react-bootstrap";
+import { Button, Col, Image, ListGroup, Row } from "react-bootstrap";
 import { BsCurrencyRupee } from "react-icons/bs";
 import Rating from "./Rating";
 import EmptyCart from "../assets/empty-cart.svg";
@@ -28,7 +28,11 @@ const CartComponent = () => {
   if (!cart.length > 0) {
     return (
       <div className="  d-flex flex-column  empty-cart justify-content-center align-items-center ">
-        <img src={EmptyCart} style={{ height: 300, width: "80%" }} />
+        <img
+          src={EmptyCart}
+          style={{ height: 300, width: "80%" }}
+          alt="Empty cart"
+        />
         <h2 style={{ padding: 10 }}>Cart is Empty</h2>
         <p>Please add some Items in your cart.</p>
       </div>

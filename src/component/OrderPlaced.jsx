@@ -12,7 +12,7 @@ const OrderPlaced = () => {
   }, 5000);
   return (
     <div className="orderPlaced d-flex  flex-column justify-content-center align-items-center ">
-      <img src={data.img} style={{ height: "80%" }}></img>
+      <img src={data.img} style={{ height: "80%" }} alt="Empty Cart"></img>
       <h5>Thank you for Shopping.</h5>
       <h2 style={{ padding: 10 }}>{data.text}</h2>
     </div>
